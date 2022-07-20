@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins;
     color: #1b1454;
@@ -114,8 +118,9 @@ header {
     height: 200px;
 }
 
-#about-us{
-    margin: 120px 0px 60px 0px;
+#about-us {
+    padding-top: 120px;
+    /* margin: 120px 0px 60px 0px; */
 }
 
 .about-us-header {
@@ -202,7 +207,7 @@ header {
 /* ---- SERVICES STYLES ---- */
 
 #services{
-    margin: 120px 0px 120px 0px;
+    padding: 120px 0;
 }
 
 .services-header {
@@ -359,7 +364,7 @@ header {
 /* ---- CONTACT STYLES ---- */
 
 #contact{
-    margin: 60px 0px 90px 0px;
+    padding: 120px 0;
 }
 
 .contact-header {
@@ -575,13 +580,21 @@ header {
 
 /* ---- FOOTER STYLES ---- */
 
-  footer {
-    height: 12rem;
+footer {
+    height: 10rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #1b1454;
     color: #fff;
+}
+
+footer div:nth-child(1) {
+    margin-right: 100px;
+}
+
+footer div:nth-child(2) {
+    margin-left: 100px;
 }
 
 .footer-styles p {
@@ -595,4 +608,8 @@ header {
 
 .footer-flex p {
     margin-left: 15px;
+}
+
+.footer-flex img {
+    width: 40px;
 }
