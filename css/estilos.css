@@ -76,7 +76,7 @@ header {
 
 #main {
     height: calc(100% - 100px - 50px);
-    background-image: url('/img/main-image.jpg');
+    background-image: url('..//img/main-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -579,13 +579,20 @@ header {
     height: 12rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #1b1454;
     color: #fff;
-    /* border-radius: 150px 150px 0px 0px; */
-  }
-  
-  .footer-styles p {
-    line-height: 25px;
-  }
+}
 
+.footer-styles p {
+    line-height: 25px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-flex p {
+    margin-left: 15px;
+}
