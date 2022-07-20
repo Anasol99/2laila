@@ -76,7 +76,7 @@ header {
 
 #main {
     height: calc(100% - 100px - 50px);
-    background-image: url('..//img/main-image.jpg');
+    background-image: url('../img/main-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
