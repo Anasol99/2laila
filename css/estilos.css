@@ -43,14 +43,14 @@ header {
     padding-right: 15px;
 }
 
-.change-lenguage {
+.change-language {
     display: flex;
     align-items: center;
     padding: 20px;
     cursor: pointer;
 }
 
-.change-lenguage img {
+.change-language img {
     width: 40px;
     margin-right: 8px;
 }
@@ -74,6 +74,11 @@ header {
     background-size: 100% 3px;
     color: #3fa9f5;
     font-weight: 500;
+}
+
+.mobile-right,
+.navbar-mobile {
+    display: none;
 }
 
 /* ---- MAIN CONTENT STYLES ---- */
@@ -119,8 +124,8 @@ header {
 }
 
 #about-us {
-    padding-top: 120px;
-    /* margin: 120px 0px 60px 0px; */
+    padding-top: 120px; 
+    margin: 120px 0px 60px 0px;
 }
 
 .about-us-header {
@@ -153,9 +158,9 @@ header {
     margin-right: 18px;
 }
 
-.about-us-background-right {
-    border-radius: 190px 0px 0px 190px;
-    margin: 60px 0px 30px 13px;
+.about-us-background-right { 
+    border-radius: 230px 0px 0px 230px;
+    margin: 60px 0px 30px 15px;
 }
 
 .about-us-background-left {
@@ -186,11 +191,12 @@ header {
 
 .about-us-background h1 {
     font-size: 25px;
+    line-height: 35px;
     
 }
 
 .about-us-background p {
-    font-size: 23px;
+    font-size: 1.4em;
     width: 34%;
     line-height: 37px;
 }
@@ -208,7 +214,7 @@ header {
 
 #services{
     padding: 120px 0 40px 0;
-}
+} 
 
 .services-header {
     display: flex;
@@ -298,7 +304,7 @@ header {
     font-size: 21px;
     line-height: 1.8;
     width: 70%;
-    color: #000000;
+    color: #000000; 
     font-weight: 300;
 }
 
@@ -314,43 +320,7 @@ header {
     text-align: center;
 }
 
-.companies-title h1 {
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.companies-line {
-    background-color:#1b1454;
-    height: 5px;
-    width: 247px;
-    margin-top: 12px;
-}
-
-.companies-logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.companies-logos .logo-tandem {
-    width: 250px;
-    margin-top: 50px;
-}
-
-.companies-logos .logo-manora {
-    width: 200px;
-    margin-top: 80px;
-}
-
-.companies-logos .logo-tgi {
-    width: 120px;
-    margin-bottom: 90px;
-
-}
-
-.companies-logos .logo-central-oceans {
-    width: 200px;
-}
+/* -------------- COMPANIES SECTION -------------- */
 
 .companies-that-trust-us {
     display: flex;
@@ -360,6 +330,52 @@ header {
     width: 78%;
     margin: auto;
 }
+
+.companies-logos-container {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.companies-title h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.companies-line {
+    background-color:#1b1454;
+    height: 5px;
+    width: 247px;
+    margin-top: 12px;
+}
+
+.companies-logos-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies-logos-row .logo-tandem {
+    width: 250px;
+    margin-top: 50px;
+}
+
+.companies-logos-row .logo-manora {
+    width: 200px;
+    margin-top: 80px;
+}
+
+.companies-logos-row .logo-tgi {
+    width: 120px;
+    margin-bottom: 90px;
+
+}
+
+.companies-logos-row .logo-central-oceans {
+    width: 200px;
+}
+
 
 /* ---- CONTACT STYLES ---- */
 
@@ -496,7 +512,7 @@ header {
     margin-right: 100px;
     font-weight: 500;
     line-height: 50px;
-}
+} 
 
 /* MAP STYLES */
 
@@ -525,6 +541,10 @@ header {
     margin-right: 120px;
     font-weight: 500;
     line-height: 50px;
+}
+
+.text-mobile {
+    display: none;
 }
 
 #map .layout {
@@ -575,7 +595,7 @@ header {
     top: 76%;
     left: 53%;
     cursor: pointer;
-}
+} 
 
 
 /* ---- FOOTER STYLES ---- */
@@ -612,4 +632,395 @@ footer div:nth-child(2) {
 
 .footer-flex img {
     width: 40px;
+} 
+
+@media (max-width: 430px) {
+   
+    .navbar {
+        height: 5rem;
+        margin-top: 5px;
+        padding: 20px;
+    }
+    
+    .navbar .logo-container img {
+        width: 40px;
+        padding: 0;
+        margin-right: 12px;
+    }
+    
+    .navbar .logo-container p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        font-weight: 500px;
+    }
+    
+    .navbar .menu {
+        position: absolute;
+        display: flex;
+        display: none;
+    }
+    
+    .navbar-mobile {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 1rem;
+        box-shadow: 0px 9px 11px -1px rgb(0 0 0 / 25%);
+        -webkit-box-shadow: 0px 9px 11px -1px rgb(0 0 0 / 25%);
+        -moz-box-shadow: 0px 9px 11px -1px rgb(0 0 0 / 25%);
+    }
+    
+    .navbar-mobile {
+        display: none;
+    }
+    
+    .navbar-mobile a {
+        text-decoration: none;
+        color: #1b1454;
+    }
+    
+    #burger-menu,
+    #close-menu {
+        display: block;
+        color: #1b1454;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    #close-menu {
+        display: none;
+    } 
+    
+    .mobile-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    #change-language-mobile {
+        background-color: #1b1454;
+        margin-left: 1rem;
+        border-radius: 50%;
+        padding: 5px;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: relative;
+    }
+    
+    .mobile-right svg {
+        width: 26px;
+        color: inherit;
+        color: #FFFFFF;
+        position: absolute;
+        top: 9px;
+        left: 6px;
+        cursor: pointer;
+    }
+    
+    #main, .container {
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    #main h1 {
+        font-size: 34.5px;
+        padding: 0px 40px;
+    }
+
+    #main h3 {
+        font-size: 14px;
+        padding: 0px 70px;
+    }
+
+    #about-us .about-us-background-title {
+        height: 60px;
+        width: 75%;
+        font-size: 30px;
+    }
+    
+    #about-us .about-us-point { 
+        width: 50px;
+        height: 50px;
+    }
+   
+    #about-us .about-us-background-title p {
+        margin-left: 30px;
+    }
+
+    .about-us-background p {
+        font-size: 17px;
+        width: 75%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-background img {
+        width: 80px;
+        padding-right: 0;
+        margin: 15px 0 15px 0;
+    }
+
+    #about-us {
+        padding-top: 80px;
+        margin: 0 0 0 0; 
+    }
+
+    .about-us-background {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-us-background-right { 
+        border-radius: 180px 180px 180px 180px; 
+        margin: 40px 0px 30px 0px;
+        height: 520px;
+    }
+
+    .about-us-background-left { 
+        border-radius: 180px 180px 180px 180px; 
+        margin: 40px 0px 30px 0px;
+        height: 750px;
+    } 
+
+    .words-paul-santos {
+        font-size: 19px;
+        padding: 15px 26px;
+    }
+     
+    #services {
+        padding: 70px 0 25px 0;
+    }
+    
+        #services .services-background-title {
+        height: 60px;
+        width: 75%;
+        font-size: 30px;
+    }
+    
+    #services .services-point { 
+        width: 50px;
+        height: 50px;
+    }
+
+    #services .services-background-title p {
+        margin-right: 30px;
+    }
+
+    .services-backgrounds {
+        flex-direction: column;
+        margin: 20px 0px 36px 0px;
+    }
+
+    .services-background-right { 
+        margin: 40px 0px 30px 0px;
+        width: 80%;
+        height: 570px;
+    }
+
+    .services-background-center { 
+        margin: 40px 0px 30px 0px;
+        width: 80%;
+        height: 570px;
+    }
+
+    .services-background-left {  
+        margin: 40px 0px 30px 0px;
+        width: 80%;
+        height: 570px;
+    }
+
+    .services-contents p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .companies-that-trust-us {
+        flex-direction: column;
+    }
+
+    .companies-logos-row .logo-tandem {
+        width: 140px;
+        margin-top: 0;
+    }
+    
+    .companies-logos-row .logo-manora {
+        width: 110px;
+        margin-top: 0px;
+    }
+    
+    .companies-logos-row .logo-tgi {
+        width: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .companies-logos-row .logo-central-oceans {
+        width: 150px;
+    }
+
+    
+    .companies-logos-container {
+        width: 100vw;
+        display: flex;
+        height: 250px;
+    }
+
+    .companies-logos-row {
+        width: 50%;
+    }
+
+    .company-icon-container {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .companies-title h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 42px;
+    }
+
+    .companies-title {
+        margin-bottom: 40px;
+    }
+
+    .companies-line {
+        background-color:#1b1454;
+        width: 223px;
+        margin-top: 12px;
+    }
+
+    #contact .contact-background-title {
+        height: 60px;
+        width: 75%;
+        font-size: 30px;
+    }
+    
+    #contact {
+        margin: 0 0 90px 0px;
+    }
+    
+    #contact .contact-point { 
+        width: 50px;
+        height: 50px;
+    }
+   
+    #contact .contact-background-title p {
+        margin-left: 30px;
+    }
+
+    .contact-background p {
+        font-size: 17px;
+        width: 75%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contact-message {
+        font-size: 24px;
+    }
+
+    .space-between {
+        display: block;
+    }
+
+    #contact-form input.inline {
+        width: 100%;
+    }
+
+    #contact-form .border-email {
+        border-radius: 5px;
+    }
+
+    #contact-form .border-name {
+        border-radius: 35px 35px 0px 0px;
+    }
+   
+    #contact-form .border-text {
+        border-radius: 0px 0px 35px 35px;
+    }
+
+    #contact-form {
+        width: 77%;
+    }
+
+
+    .text-desktop {
+        display: none;
+    }
+
+    .text-mobile {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #map .layout {
+        height: 130vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #map .map-container {
+        height: 600%;
+        width: 93%;
+    }
+    
+    .map-container .map {
+        width: 100%;
+        height: 83%;
+    }
+
+    .map-container img {
+        width: 6.7%;
+    }
+
+    .marker-1 {
+        top: 34.8%;
+        left: 17.7%;
+    }
+
+    .marker-2 {
+        top: 50%;
+        left: 30.4%;
+    }
+
+    .marker-3 {
+        top: 47%;
+        left: 49.9%;
+    }
+
+    .marker-4 {
+        top: 54%;
+        left: 52.4%;
+    }
+
+    .footer-flex p {
+        display: none;
+    }
+
+    footer div:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .footer-styles p {
+    font-size: 14px;
+    }
+
+    footer div:nth-child(2) {
+        margin-left: 23px;
+    }
+    
 }
+
+
